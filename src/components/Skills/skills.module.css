@@ -1,28 +1,48 @@
-.skills {
-    height: auto;
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
+@media (min-width: 800px) {
+    .skills {
+        height: auto;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
     "languages frameworks devops"
     "languages frameworks online";
-    font-size: 0.9em;
+        font-size: 0.9em;
+    }
+
+    .languages {
+        grid-area: languages;
+    }
+    .frameworks {
+        grid-area: frameworks;
+    }
+    .devops {
+        grid-area: devops;
+    }
+    .online {
+        grid-area: online;
+    }
 }
 
-.languages {
-    grid-area: languages;
-}
-.frameworks {
-    grid-area: frameworks;
-}
-.devops {
-    grid-area: devops;
-}
-.online {
-    grid-area: online;
+@media (max-width: 600px) {
+    .skillset {
+        margin: 25px 0;
+    }
 }
 
-.skillset {
-    /*padding: 10px;*/
+.skillbox {
+    margin: 15px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
 }
+
+/*@media (max-width: 600px) {*/
+/*    .skillbox {*/
+/*        margin: 0;*/
+/*        border: 1px solid black;*/
+/*        border-radius: 10px;*/
+/*        padding: 10px 20px;*/
+/*    }*/
+/*}*/

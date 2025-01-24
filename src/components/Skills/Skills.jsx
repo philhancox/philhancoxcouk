@@ -55,7 +55,7 @@ function Skills() {
         }
     }
 
-    return <div style={{margin: '15px 0', border: '1px solid black', borderRadius: '10px', padding: '20px'}}>
+    return <div className={styles.skillbox}>
         <h2>Skills</h2>
         <div className={styles.skills}>
             {Object.keys(skills).map((key) => {
