@@ -1,0 +1,19 @@
+.inner {
+    background-image: url('/phil-hancox.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 100%
+}
+
+.text {
+    padding: 150px;
+    width: 80%;
+    line-height: 160%;
+}
+
+.phil {
+    font-size: 2em;
+    background: linear-gradient(to right, #7851a9, #4169e1);
+    -webkit-background-clip: text;
+    color: transparent;
+}
