@@ -1,9 +1,9 @@
-import {Montserrat} from 'next/font/google';
+import {DM_Sans} from 'next/font/google';
 import "./globals.css";
 import {SpeedInsights} from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react"
 
-const mainFont = Montserrat({
+const mainFont = DM_Sans({
     subsets: ['latin'],
     weight: ['300', '400', '500', '600', '700'],
     display: 'swap',

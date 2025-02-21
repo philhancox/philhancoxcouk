@@ -32,10 +32,10 @@
 }
 
 .skillbox {
-    margin: 15px 0;
-    border: 1px solid black;
+    margin: 45px 0;
     border-radius: 10px;
     padding: 20px;
+    background: peachpuff;
 }
 
 /*@media (max-width: 600px) {*/

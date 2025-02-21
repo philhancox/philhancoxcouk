@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  padding: 4px 0 10px;
+  padding: 5px 0 15px;
 }
 
 
@@ -43,21 +43,23 @@ header {
   font-weight: 700;
   background: linear-gradient(to bottom, white, #F8F8FF);
   height: 500px;
+  border-bottom: 4px solid rebeccapurple;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 main {
-  width: 85%;
+  width: 65%;
+  margin: 0 auto;
   padding: 100px;
-  font-size: 1.2em;
-  line-height: 140%;
+  font-size: 1.3em;
+  line-height: 160%;
   font-weight: 500;
 }
 
