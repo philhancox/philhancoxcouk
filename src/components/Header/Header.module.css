@@ -2,12 +2,15 @@
     background-image: url('/phil-hancox.png');
     background-repeat: no-repeat;
     background-position: bottom right;
-    height: 100%
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
     .inner {
         background-size: 65%;
+        width: 100%;
     }
 }
 
