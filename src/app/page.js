@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import '@fortawesome/fontawesome-svg-core/styles'
 import Skills from "@/components/Skills";
 
@@ -34,7 +33,6 @@ export default function Home() {
             <Skills />
         </main>
 
-        <Footer/>
 
     </div>
 );
