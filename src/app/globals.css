@@ -31,6 +31,17 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
   color: transparent;
 }
+@media (max-width: 600px) {
+  .has-bg {
+    display: block;
+  }
+
+  .work-skills {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
 .has-bg {
   background: linear-gradient(to right, #7851a9, red);
   color: white;

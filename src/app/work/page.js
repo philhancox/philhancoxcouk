@@ -114,27 +114,34 @@ function WorkPage() {
             {WORK.map((company) => {
                 return <div style={{background: "peachpuff", margin: '25px 0', padding: '30px'}} key={company.id}>
                     <h2><span className="has-bg">{company.company}</span></h2>
-                    <div><h3>{company.job_title}</h3></div>
-                    <div><span>{company.dates}</span> &bull; <span>{company.location}</span></div>
+                    <div style={{padding: '20px 0'}}>
+                        <div><h3>{company.job_title}</h3></div>
+                        <div><span>{company.dates}</span> &bull; <span>{company.location}</span></div>
+                    </div>
                     <div>
-                    {company.stack.map((item) => {
 
-                        return <span key={item.id} style={{
-                            border: '1px solid grey',
-                            margin: '0 8px 0 0',
-                            padding: '0 8px 3px 8px',
-                            background: 'white',
-                            borderRadius: '5px'
-                        }}>
-                            <small>
-                            <FontAwesomeIcon color={item.colour} icon={item.icon}/> {item.name}
-                            </small>
-                        </span>
+                        <div className="work-skills">
+                            {company.stack.map((item) => {
 
-                    })}
+                                return <span key={item.id} style={{
+                                    border: '1px solid grey',
+                                    margin: '0 8px 0 0',
+                                    padding: '0 8px 3px 8px',
+                                    background: 'white',
+                                    borderRadius: '5px'
+                                }}>
+                                    <small>
+                                    <FontAwesomeIcon color={item.colour} icon={item.icon}/> {item.name}
+                                    </small>
+                                </span>
+
+                            })}
+                        </div>
+
                         <div style={{padding: '15px 0 0'}}>
                         <p>{company.description}</p>
                         </div>
+
                     </div>
                 </div>
             })}
